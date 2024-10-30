@@ -24,3 +24,4 @@ doc/*.txt
 # ignore all .jar files in the doc/ directory
 *.jar
 
+/.metadata/

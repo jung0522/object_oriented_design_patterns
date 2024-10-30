@@ -13,13 +13,13 @@ public class CarFactory {
                                   // createCar() 자동차를 만들 때 
                                   // 자동차 번호가 10001부터 시작된다 하였으므로
 
-  
 
     // 싱글턴 인스턴스를 반환하는 메서드 
     // synchronized를 통해 동시에 여러 스레드가 접근하더라도 인스턴스가 한 번만 생성되도록 보장한다
     public static synchronized CarFactory getInstance() {
         if (instance == null) {
             instance = new CarFactory(); // 인스턴스가 없을 경우 생성
+            
         }
         return instance;
     }
