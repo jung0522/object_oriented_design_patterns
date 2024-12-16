@@ -14,7 +14,7 @@ public class ChicagoPizzaStore extends PizzaStore {
     // ChicagoPizzaStore에서 고유한 피자 객체를 생성하는 팩토리 메소드
     // Chicago 스타일의 치즈와 페페로니 피자만 만들 수 있도록 오버라이딩해서 구현
     @Override
-    protected Pizza createPizza(String item) {
+    Pizza createPizza(String item) {
     	// 피자의 종류에 따라 Chicago 스타일 피자를 생성
         if (item.equals("cheese")) { 
             return new ChicagoCheesePizza();  // Chicago 치즈 피자

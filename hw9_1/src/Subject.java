@@ -5,12 +5,12 @@
 //내용:   * 수를 생성하는 추상 클래스
 //***************************
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.Iterator;
 
-public abstract class Subject {
+public abstract class Subject{
 	
-  private ArrayList observers = new ArrayList();
+  private List<Observer> observers = new ArrayList<>();
   public void addObserver(Observer observer) {
     observers.add(observer);
   }
@@ -18,13 +18,12 @@ public abstract class Subject {
     observers.remove(observer);
   }
   public void notifyObservers() {
-    Iterator it = observers.iterator();
-    while (it.hasNext()) {
-      Observer o = (Observer)it.next();
+   for(Observer o : observers) {
       o.update(this);
     }
   }
   public abstract int getNumber();
+  
   public abstract void execute();
 }
 

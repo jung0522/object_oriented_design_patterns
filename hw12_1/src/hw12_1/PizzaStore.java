@@ -25,5 +25,5 @@ public abstract class PizzaStore {
 
     // 각 Store에서 고유의 피자 객체를 생성하는 팩토리 메서드
     // 하위 클래스(ChicagoPizzaStore or NYPizzaStore)에서 이 팩토리 메서드를 구현
-    protected abstract Pizza createPizza(String item);
+    abstract Pizza createPizza(String item);
 }

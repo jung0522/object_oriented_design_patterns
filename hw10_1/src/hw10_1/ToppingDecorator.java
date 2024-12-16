@@ -7,7 +7,7 @@
 package hw10_1;
 
 // AbstractPizza(추상 클래스)를 상속 받는다.
-abstract class ToppingDecorator extends AbstractPizza {
+class ToppingDecorator extends AbstractPizza {
     
 	// 데코레이팅할 피자 객체
     protected AbstractPizza pizza;
